@@ -1,0 +1,37 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_Technical_Test,,,,29-08-2026 19:14:53,29-08-2026 19:15:10,16.871s,FAILED
+,,,,,,,
+Test Cases/TC_Create_User,,,,29-08-2026 19:14:53,29-08-2026 19:14:54,1.087s,PASSED
+"response = sendRequest(findTestObject(""Create User""))",,,,29-08-2026 19:14:53,29-08-2026 19:14:54,0.898s,PASSED
+"logInfo(""Response Status: "" + response.getStatusCode())",,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.006s,PASSED
+"logInfo(""Response Body: "" + response.getResponseText())",,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.002s,PASSED
+"verifyResponseStatusCode(response, 201)",,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.008s,PASSED
+"markPassed(""Create User API - PASS"")",,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.004s,PASSED
+,,,,,,,
+Test Cases/TC_Get_User,,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.129s,PASSED
+request = new com.kms.katalon.core.testobject.RequestObject(),,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.008s,PASSED
+"request.setRestUrl(""https://jsonplaceholder.typicode.com/users/1"")",,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.001s,PASSED
+"request.setRestRequestMethod(""GET"")",,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.001s,PASSED
+response = sendRequest(request),,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.063s,PASSED
+"logInfo(""Status: "" + response.getStatusCode())",,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.002s,PASSED
+"logInfo(""Response: "" + response.getResponseText())",,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.003s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.007s,PASSED
+"assert getResponseText().contains(""""id"": 1"") : ""Response tidak mengandung id = 1""",,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.006s,PASSED
+"markPassed(""Get User API - PASS"")",,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.002s,PASSED
+,,,,,,,
+Test Cases/TC_Kafka_Consumer,,,,29-08-2026 19:14:54,29-08-2026 19:15:10,15.416s,FAILED
+"bootstrapServer = ""localhost:9092""",,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.001s,PASSED
+"topic = ""technical-test""",,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.001s,PASSED
+"consumerGroup = ""katalon-consumer-group""",,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.001s,PASSED
+props = new java.util.Properties(),,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.005s,PASSED
+"props.put(""bootstrap.servers"", bootstrapServer)",,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.001s,PASSED
+"props.put(""group.id"", consumerGroup)",,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.001s,PASSED
+"props.put(""key.deserializer"", ""org.apache.kafka.common.serialization.StringDeserializer"")",,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.001s,PASSED
+"props.put(""value.deserializer"", ""org.apache.kafka.common.serialization.StringDeserializer"")",,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.000s,PASSED
+"props.put(""auto.offset.reset"", ""earliest"")",,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.000s,PASSED
+consumer = new org.apache.kafka.clients.consumer.KafkaConsumer(props),,,,29-08-2026 19:14:54,29-08-2026 19:14:54,0.107s,PASSED
+"logInfo(""Kafka Consumer started"")",,,,29-08-2026 19:14:55,29-08-2026 19:14:55,0.001s,PASSED
+"logInfo(""Topic: "" + topic)",,,,29-08-2026 19:14:55,29-08-2026 19:14:55,0.001s,PASSED
+consumer.subscribe([topic]),,,,29-08-2026 19:14:55,29-08-2026 19:14:55,0.001s,PASSED
+try,,,,29-08-2026 19:14:55,29-08-2026 19:15:10,15.078s,PASSED
+Finally,,,,29-08-2026 19:15:10,29-08-2026 19:15:10,0.094s,FAILED

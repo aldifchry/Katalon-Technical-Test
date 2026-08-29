@@ -1,0 +1,25 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+TS_Technical_Test,,,,29-08-2026 19:05:08,29-08-2026 19:05:24,16.036s,FAILED
+,,,,,,,
+Test Cases/TC_Create_User,,,,29-08-2026 19:05:08,29-08-2026 19:05:08,0.174s,PASSED
+return null,,,,29-08-2026 19:05:08,29-08-2026 19:05:08,0.000s,PASSED
+,,,,,,,
+Test Cases/TC_Get_User,,,,29-08-2026 19:05:08,29-08-2026 19:05:09,0.086s,FAILED
+"response = sendRequest(findTestObject(""REST/Get User""))",,,,29-08-2026 19:05:08,29-08-2026 19:05:09,0.044s,FAILED
+,,,,,,,
+Test Cases/TC_Kafka_Consumer,,,,29-08-2026 19:05:09,29-08-2026 19:05:24,15.503s,FAILED
+"bootstrapServer = ""localhost:9092""",,,,29-08-2026 19:05:09,29-08-2026 19:05:09,0.001s,PASSED
+"topic = ""technical-test""",,,,29-08-2026 19:05:09,29-08-2026 19:05:09,0.001s,PASSED
+"consumerGroup = ""katalon-consumer-group""",,,,29-08-2026 19:05:09,29-08-2026 19:05:09,0.001s,PASSED
+props = new java.util.Properties(),,,,29-08-2026 19:05:09,29-08-2026 19:05:09,0.012s,PASSED
+"props.put(""bootstrap.servers"", bootstrapServer)",,,,29-08-2026 19:05:09,29-08-2026 19:05:09,0.003s,PASSED
+"props.put(""group.id"", consumerGroup)",,,,29-08-2026 19:05:09,29-08-2026 19:05:09,0.001s,PASSED
+"props.put(""key.deserializer"", ""org.apache.kafka.common.serialization.StringDeserializer"")",,,,29-08-2026 19:05:09,29-08-2026 19:05:09,0.002s,PASSED
+"props.put(""value.deserializer"", ""org.apache.kafka.common.serialization.StringDeserializer"")",,,,29-08-2026 19:05:09,29-08-2026 19:05:09,0.001s,PASSED
+"props.put(""auto.offset.reset"", ""earliest"")",,,,29-08-2026 19:05:09,29-08-2026 19:05:09,0.001s,PASSED
+consumer = new org.apache.kafka.clients.consumer.KafkaConsumer(props),,,,29-08-2026 19:05:09,29-08-2026 19:05:09,0.163s,PASSED
+"logInfo(""Kafka Consumer started"")",,,,29-08-2026 19:05:09,29-08-2026 19:05:09,0.003s,PASSED
+"logInfo(""Topic: "" + topic)",,,,29-08-2026 19:05:09,29-08-2026 19:05:09,0.002s,PASSED
+consumer.subscribe([topic]),,,,29-08-2026 19:05:09,29-08-2026 19:05:09,0.002s,PASSED
+try,,,,29-08-2026 19:05:09,29-08-2026 19:05:24,15.092s,PASSED
+Finally,,,,29-08-2026 19:05:24,29-08-2026 19:05:24,0.109s,FAILED

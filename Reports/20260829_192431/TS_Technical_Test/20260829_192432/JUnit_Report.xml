@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TS_Technical_Test" time="2.75" tests="3" failures="0" errors="0">
+   <testsuite name="TS_Technical_Test" tests="3" failures="0" errors="0" time="2.75" skipped="0" timestamp="29-08-2026T19:24:35" hostname="aldi - localhost" id="Test Suites/TS_Technical_Test">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="/Users/aldi/Katalon Studio/Katalon-Technical-Test/Reports/20260829_192431/TS_Technical_Test/20260829_192432"/>
+         <property name="logFiles" value="/Users/aldi/Katalon Studio/Katalon-Technical-Test/Reports/20260829_192431/TS_Technical_Test/20260829_192432/execution0.log, /Users/aldi/Katalon Studio/Katalon-Technical-Test/Reports/20260829_192431/TS_Technical_Test/20260829_192432/console0.log"/>
+         <property name="attachments" value=""/>
+         <property name="userFullName" value="Moh Aldi Fachry Alamsyah"/>
+         <property name="hostName" value="aldi - localhost"/>
+         <property name="hostAddress" value="127.0.0.1"/>
+         <property name="projectName" value="Katalon-Technical-Test"/>
+         <property name="os" value="Mac OS X 64bit"/>
+         <property name="katalonVersion" value="10.2.0.0"/>
+      </properties>
+      <testcase name="Test Cases/TC_Create_User" time="1.166" classname="Test Cases/TC_Create_User" status="PASSED">
+         <system-out><![CDATA[29-08-2026T19:24:35 - [TEST_CASE][PASSED] - Test Cases/TC_Create_User: Test Cases/TC_Create_User
+
+29-08-2026T19:24:36 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("Create User")): Send request successfully
+
+29-08-2026T19:24:36 - [MESSAGE][INFO] - HAR: /Users/aldi/Katalon Studio/Katalon-Technical-Test/Reports/20260829_192431/TS_Technical_Test/20260829_192432/requests/main/Create-User_0.har
+
+29-08-2026T19:24:37 - [MESSAGE][PASSED] - Send request successfully
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Response Status: " + response.getStatusCode()): Response Status: 201
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Response Status: 201
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Response Body: " + response.getResponseText()): Response Body: {
+  "name": "Aldi",
+  "username": "aldi",
+  "email": "aldi@example.com",
+  "id": 11
+}
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Response Body: {
+  "name": "Aldi",
+  "username": "aldi",
+  "email": "aldi@example.com",
+  "id": 11
+}
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 201): Verify response status code successfully
+
+29-08-2026T19:24:37 - [MESSAGE][PASSED] - Verify response status code successfully
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - markPassed("Create User API - PASS"): Create User API - PASS
+
+29-08-2026T19:24:37 - [MESSAGE][PASSED] - Create User API - PASS]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_Get_User" time="0.15" classname="Test Cases/TC_Get_User" status="PASSED">
+         <system-out><![CDATA[29-08-2026T19:24:37 - [TEST_CASE][PASSED] - Test Cases/TC_Get_User: Test Cases/TC_Get_User
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - request = new com.kms.katalon.core.testobject.RequestObject(): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - request.setRestUrl("https://jsonplaceholder.typicode.com/users/1"): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - request.setRestRequestMethod("GET"): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - response = sendRequest(request): Send request successfully
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - HAR: /Users/aldi/Katalon Studio/Katalon-Technical-Test/Reports/20260829_192431/TS_Technical_Test/20260829_192432/requests/main/null_1.har
+
+29-08-2026T19:24:37 - [MESSAGE][PASSED] - Send request successfully
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Status: " + response.getStatusCode()): Status: 200
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Status: 200
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Response: " + response.getResponseText()): Response: {
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Response: {
+  "id": 1,
+  "name": "Leanne Graham",
+  "username": "Bret",
+  "email": "Sincere@april.biz",
+  "address": {
+    "street": "Kulas Light",
+    "suite": "Apt. 556",
+    "city": "Gwenborough",
+    "zipcode": "92998-3874",
+    "geo": {
+      "lat": "-37.3159",
+      "lng": "81.1496"
+    }
+  },
+  "phone": "1-770-736-8031 x56442",
+  "website": "hildegard.org",
+  "company": {
+    "name": "Romaguera-Crona",
+    "catchPhrase": "Multi-layered client-server neural-net",
+    "bs": "harness real-time e-markets"
+  }
+}
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+29-08-2026T19:24:37 - [MESSAGE][PASSED] - Verify response status code successfully
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - assert getResponseText().contains(""id": 1") : "Response tidak mengandung id = 1": null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - markPassed("Get User API - PASS"): Get User API - PASS
+
+29-08-2026T19:24:37 - [MESSAGE][PASSED] - Get User API - PASS]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TC_Kafka_Consumer" time="1.165" classname="Test Cases/TC_Kafka_Consumer" status="PASSED">
+         <system-out><![CDATA[29-08-2026T19:24:37 - [TEST_CASE][PASSED] - Test Cases/TC_Kafka_Consumer: Test Cases/TC_Kafka_Consumer
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - bootstrapServer = "localhost:9092": null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - topic = "technical-test": null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - consumerGroup = "katalon-consumer-" + randomUUID().toString(): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("========================================"): ========================================
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - ========================================
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Kafka Consumer Test"): Kafka Consumer Test
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Kafka Consumer Test
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("========================================"): ========================================
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - ========================================
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Bootstrap Server: " + bootstrapServer): Bootstrap Server: localhost:9092
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Bootstrap Server: localhost:9092
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Topic: " + topic): Topic: technical-test
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Topic: technical-test
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Consumer Group: " + consumerGroup): Consumer Group: katalon-consumer-dfebf07e-6c46-4a7e-bb3e-e9e9304cd5a6
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Consumer Group: katalon-consumer-dfebf07e-6c46-4a7e-bb3e-e9e9304cd5a6
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - props = new java.util.Properties(): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - props.put("bootstrap.servers", bootstrapServer): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - props.put("group.id", consumerGroup): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - props.put("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer"): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - props.put("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer"): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - props.put("auto.offset.reset", "earliest"): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - props.put("enable.auto.commit", "false"): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - consumer = new org.apache.kafka.clients.consumer.KafkaConsumer(props): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - try: Kafka Consumer - PASS
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - consumer.subscribe([topic]): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Subscribed to topic: " + topic): Subscribed to topic: technical-test
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Subscribed to topic: technical-test
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Waiting for Kafka message..."): Waiting for Kafka message...
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Waiting for Kafka message...
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - timeout = System.currentTimeMillis() + 15000: null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - receivedMessage = null: null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - while (System.currentTimeMillis() < timeout && receivedMessage == null): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - records = consumer.poll(Duration.ofMillis(1000)): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Records received: " + records.count()): Records received: 5
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Records received: 5
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - for (org.apache.kafka.clients.consumer.ConsumerRecord<String, String> record : records): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - value = record.value(): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("----------------------------------------"): ----------------------------------------
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - ----------------------------------------
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Received Message: " + value): Received Message: aldi@192 Katalon-Technical-Test %
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Received Message: aldi@192 Katalon-Technical-Test %
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Topic: " + record.topic()): Topic: technical-test
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Topic: technical-test
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Partition: " + record.partition()): Partition: 0
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Partition: 0
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Offset: " + record.offset()): Offset: 0
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Offset: 0
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - if (value != null && value.contains("technical-test")): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - value = record.value(): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("----------------------------------------"): ----------------------------------------
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - ----------------------------------------
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Received Message: " + value): Received Message: technical-test
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Received Message: technical-test
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Topic: " + record.topic()): Topic: technical-test
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Topic: technical-test
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Partition: " + record.partition()): Partition: 0
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Partition: 0
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Offset: " + record.offset()): Offset: 1
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Offset: 1
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - if (value != null && value.contains("technical-test")): null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - receivedMessage = value: null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Expected event found!"): Expected event found!
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Expected event found!
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - break: null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - assert receivedMessage != null : "Kafka message containing 'technical-test' was not received within 15 seconds": null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - assert receivedMessage.contains("technical-test") : "Kafka message does not contain expected event": null
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("========================================"): ========================================
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - ========================================
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Kafka Message Validation: PASS"): Kafka Message Validation: PASS
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Kafka Message Validation: PASS
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("Message: " + receivedMessage): Message: technical-test
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - Message: technical-test
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - logInfo("========================================"): ========================================
+
+29-08-2026T19:24:37 - [MESSAGE][INFO] - ========================================
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - markPassed("Kafka Consumer - PASS"): Kafka Consumer - PASS
+
+29-08-2026T19:24:37 - [MESSAGE][PASSED] - Kafka Consumer - PASS
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - Finally: Kafka Consumer closed
+
+29-08-2026T19:24:37 - [TEST_STEP][PASSED] - consumer.close(): null
+
+29-08-2026T19:24:38 - [TEST_STEP][PASSED] - logInfo("Kafka Consumer closed"): Kafka Consumer closed
+
+29-08-2026T19:24:38 - [MESSAGE][INFO] - Kafka Consumer closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[29-08-2026T19:24:35 - [TEST_SUITE][PASSED] - TS_Technical_Test: Test Cases/TC_Kafka_Consumer]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
